@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const {geocode,forecast} = require('./utils');
 //function
 const app = express();
+const  = process.env.PORT || 3000
 
 //define paths for express config
 const viewsPth = path.join(__dirname,'../templates/views')
@@ -84,6 +85,6 @@ app.get('*',(req,res)=>{
         error:'The page you are looking for was not found'
     })
 })
-app.listen(4000,()=>{
+app.listen(port,()=>{
     console.log('Server Started')
 })
