@@ -4,7 +4,7 @@ const hbs = require('hbs');
 const {geocode,forecast} = require('./utils');
 //function
 const app = express();
-const  = process.env.PORT || 3000
+const port = process.env.PORT || 3000
 
 //define paths for express config
 const viewsPth = path.join(__dirname,'../templates/views')
